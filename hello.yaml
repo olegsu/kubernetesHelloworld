@@ -24,7 +24,7 @@ kind: Service
 metadata:
   name: hello-k8s-service
 spec:
-  type: NodePort #Exposes the service as a node port
+  type: LoadBalancer
   ports:
   - port: 80
     protocol: TCP
